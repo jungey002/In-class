@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body>
+
+
+    <div>
+
+        <p style="color:rgb(0, 255, 34);">Input 1: <input type="text" id="input1" > </p> 
+        <p style="color:rgb(76, 0, 255);">Input 2: <input type="text" id="input2" > </p>  
+        <p>
+            Operator: 
+
+            <button onclick="add()">+</button> 
+            <button onclick="substract()">-</button> 
+            <button onclick="multiply()">*</button> 
+            <button onclick="division()">/</button>
+         </p> 
+         <p style="color:red;">Result:</p></p> <p id="res"></p>
+    
+
+
+        <script>
+
+            function add(){
+
+                var x=parseFloat(document.getElementById("input1").value);
+                var y=parseFloat(document.getElementById("input2").value);
+
+                var z=x+y;
+
+                document.getElementById("res").innerHTML=x+"+"+y+"="+z;
+
+                 
+            }
+            function substract(){
+
+var x=parseFloat(document.getElementById("input1").value);
+var y=parseFloat(document.getElementById("input2").value);
+
+var z=x-y;
+
+document.getElementById("res").innerHTML=x+"-"+y+"="+z;
+
+ 
+}
+function multiply(){
+
+var x=parseFloat(document.getElementById("input1").value);
+var y=parseFloat(document.getElementById("input2").value);
+
+var z=x*y;
+
+document.getElementById("res").innerHTML=x+"*"+y+"="+z;
+
+ 
+}
+function division(){
+
+var x=parseFloat(document.getElementById("input1").value);
+var y=parseFloat(document.getElementById("input2").value);
+
+var z=x/y;
+
+document.getElementById("res").innerHTML=x+"/"+y+"="+z;
+
+ 
+}
+
+        </script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+    
+        button {
+            background-color: #4c60af; 
+            color: white;
+            padding: 10px 20px;
+            margin: 4px 2px; 
+            cursor: pointer; 
+            border: none; 
+            border-radius: 5px; 
+        }
+
+        .subtract-button {
+            background-color: #f44336; 
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+
+     
+
+
+
+
+
+    </div>
+
+</body>
+</html>
